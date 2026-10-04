@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" width="1200" height="150" role="img" aria-label="Thanks for visiting">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#fe6060"/><stop offset="1" stop-color="#ff8b72"/></linearGradient></defs>
+<style>
+  .w { animation: slide 9s linear infinite; }
+  .w2 { animation-duration: 14s; animation-direction: reverse; }
+  @keyframes slide { to { transform: translateX(-300px); } }
+  @media (prefers-reduced-motion: reduce) { .w { animation: none; } }
+</style>
+<text x="600.0" y="44" text-anchor="middle" font-family="'Kumbh Sans','Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="url(#g)">Thanks for stopping by — let’s build something useful.</text>
+<path class="w w2" d="M0 110 Q75.0 94 150.0 110 T300 110 Q375.0 94 450.0 110 T600 110 Q675.0 94 750.0 110 T900 110 Q975.0 94 1050.0 110 T1200 110 Q1275.0 94 1350.0 110 T1500 110 Q1575.0 94 1650.0 110 T1800 110 Q1875.0 94 1950.0 110 T2100 110 Q2175.0 94 2250.0 110 T2400 110 V150 H0Z" fill="url(#g)" opacity=".25"/>
+<path class="w" d="M0 118 Q75.0 106 150.0 118 T300 118 Q375.0 106 450.0 118 T600 118 Q675.0 106 750.0 118 T900 118 Q975.0 106 1050.0 118 T1200 118 Q1275.0 106 1350.0 118 T1500 118 Q1575.0 106 1650.0 118 T1800 118 Q1875.0 106 1950.0 118 T2100 118 Q2175.0 106 2250.0 118 T2400 118 V150 H0Z" fill="url(#g)" opacity=".5"/>
+</svg>
