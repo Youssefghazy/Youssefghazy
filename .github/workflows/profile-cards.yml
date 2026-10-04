@@ -30,7 +30,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide=stars&hide_rank=false&bg_color=0a0a0c&title_color=fe6060&icon_color=ff8b72&text_color=d6d6d6&ring_color=fe6060&border_color=26262b&border_radius=16&custom_title=GitHub%20at%20a%20glance
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&hide=stars&hide_rank=true&bg_color=0a0a0c&title_color=fe6060&icon_color=ff8b72&text_color=d6d6d6&ring_color=fe6060&border_color=26262b&border_radius=16&custom_title=GitHub%20at%20a%20glance
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
