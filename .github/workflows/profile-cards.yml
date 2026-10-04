@@ -22,16 +22,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - name: Contribution snake (coral, dark + light)
-        uses: Platane/snk@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            profile/snake-dark.svg?palette=github-dark&color_snake=#fe6060&color_dots=#161b22,#4a1d1d,#8f2f2f,#d64848,#ff8b72
-            profile/snake-light.svg?palette=github-light&color_snake=#fe6060&color_dots=#ebedf0,#ffd6cf,#ffab9c,#ff7f70,#fe6060
-
+      # The stats cards run first: the snake runs in a root-owned Docker
+      # container, and a profile/ folder it creates would be read-only here.
       - name: Stats card
         uses: stats-organization/github-readme-stats-action@v2
         with:
@@ -48,8 +42,18 @@ jobs:
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Contribution snake (coral, dark + light)
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            profile/snake-dark.svg?palette=github-dark&color_snake=#fe6060&color_dots=#161b22,#4a1d1d,#8f2f2f,#d64848,#ff8b72
+            profile/snake-light.svg?palette=github-light&color_snake=#fe6060&color_dots=#ebedf0,#ffd6cf,#ffab9c,#ff7f70,#fe6060
+
       - name: Commit updated cards
         run: |
+          sudo chown -R "$(id -u):$(id -g)" profile
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile/
