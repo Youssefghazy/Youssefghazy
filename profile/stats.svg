@@ -1,8 +1,8 @@
 
       <svg
-        width="467"
+        width="304"
         height="170"
-        viewBox="0 0 467 170"
+        viewBox="0 0 304 170"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
@@ -117,7 +117,7 @@
           rx="16"
           height="99%"
           stroke="#26262b"
-          width="466"
+          width="303"
           fill="#0a0a0c"
           stroke-opacity="1"
         />
@@ -143,18 +143,7 @@
           transform="translate(0, 55)"
         >
           
-    <g data-testid="rank-circle"
-          transform="translate(390.5, 35)">
-        <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
-        <circle class="rank-circle" cx="-10" cy="8" r="40" />
-        <g class="rank-text">
-          
-        <text x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">
-          C
-        </text>
-      
-        </g>
-      </g>
+    
     <svg x="0" y="0">
       <g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms" transform="translate(25, 0)">
