@@ -8,7 +8,7 @@
   <a href="mailto:youssef.ahmed.said.ghazy@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hi-fe6060?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0a0c" alt="Email" /></a>
   <a href="https://youssefghazy.vercel.app/Youssef_Ghazy_CV.pdf"><img src="https://img.shields.io/badge/CV-Download-ff8b72?style=for-the-badge&labelColor=0a0a0c" alt="CV" /></a>
   <br/>
-  <img src="https://komarev.com/ghpvc/?username=Youssefghazy&label=profile%20views&color=fe6060&style=flat-square" alt="profile views" />
+   <img src="https://api.visitorbadge.io/api/visitors?path=github.com%2FYoussefghazy&label=PROFILE%20VIEWS&labelColor=%230a0a0c&countColor=%23fe6060&style=for-the-badge&labelStyle=upper" alt="" />
 </p>
 
 <img src="assets/terminal.svg" width="100%" alt="$ whoami — Youssef Ghazy, IT student at Asia Pacific University; Frontend Developer at BarqSec; UMHackathon 2026 4th runner-up; speaks Arabic, English, French" />
