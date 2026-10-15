@@ -5,7 +5,7 @@ name: Refresh profile cards
 
 on:
   schedule:
-    - cron: "0 */12 * * *"   # twice a day
+    - cron: "17 */3 * * *"   # every 3 hours (at :17 to avoid the busy top of the hour)
   workflow_dispatch:         # "Run workflow" button in the Actions tab
   push:
     branches: [main]
